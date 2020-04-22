@@ -1,0 +1,1070 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.5  多表查询 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="3.6外连接.html" />
+    
+    
+    <link rel="prev" href="3.4通用函数.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../d1z/d1z.html">
+            
+                <a href="../d1z/d1z.html">
+            
+                    
+                    第一章    关系型数据库Oracle
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../d1z/1.1数据库概述.html">
+            
+                <a href="../d1z/1.1数据库概述.html">
+            
+                    
+                    1.1  数据库概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../d1z/1.2数据库系统发展史.html">
+            
+                <a href="../d1z/1.2数据库系统发展史.html">
+            
+                    
+                    1.2  数据库系统发展史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../d1z/1.3主流数据库简介.html">
+            
+                <a href="../d1z/1.3主流数据库简介.html">
+            
+                    
+                    1.3  主流数据库简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../d1z/1.4结构化查询语言.html">
+            
+                <a href="../d1z/1.4结构化查询语言.html">
+            
+                    
+                    1.4  结构化查询语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../d1z/1.5Oracle安装.html">
+            
+                <a href="../d1z/1.5Oracle安装.html">
+            
+                    
+                    1.5  Oracle安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../d1z/1.6Oracle初使用.html">
+            
+                <a href="../d1z/1.6Oracle初使用.html">
+            
+                    
+                    1.6  Oracle初使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../d1z/1.7本章练习.html">
+            
+                <a href="../d1z/1.7本章练习.html">
+            
+                    
+                    1.7  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../d2z/d2z.html">
+            
+                <a href="../d2z/d2z.html">
+            
+                    
+                    第二章    查询和排序
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../d2z/2.1数据库表简介.html">
+            
+                <a href="../d2z/2.1数据库表简介.html">
+            
+                    
+                    2.1  数据库表简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../d2z/2.2数据查询.html">
+            
+                <a href="../d2z/2.2数据查询.html">
+            
+                    
+                    2.2  数据查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../d2z/2.3限定返回行.html">
+            
+                <a href="../d2z/2.3限定返回行.html">
+            
+                    
+                    2.3  限定返回行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../d2z/2.4排序.html">
+            
+                <a href="../d2z/2.4排序.html">
+            
+                    
+                    2.4  排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../d2z/2.5本章练习.html">
+            
+                <a href="../d2z/2.5本章练习.html">
+            
+                    
+                    2.5  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="d3z.html">
+            
+                <a href="d3z.html">
+            
+                    
+                    第三章    单行函数和多表查询
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="3.1SQL函数.html">
+            
+                <a href="3.1SQL函数.html">
+            
+                    
+                    3.1  SQL函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="3.2字符、数字、日期函数.html">
+            
+                <a href="3.2字符、数字、日期函数.html">
+            
+                    
+                    3.2  字符、数字、日期函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="3.3转换函数.html">
+            
+                <a href="3.3转换函数.html">
+            
+                    
+                    3.3  转换函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="3.4通用函数.html">
+            
+                <a href="3.4通用函数.html">
+            
+                    
+                    3.4  通用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.1.5" data-path="3.5多表查询.html">
+            
+                <a href="3.5多表查询.html">
+            
+                    
+                    3.5  多表查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="3.6外连接.html">
+            
+                <a href="3.6外连接.html">
+            
+                    
+                    3.6  外连接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="3.7本章练习.html">
+            
+                <a href="3.7本章练习.html">
+            
+                    
+                    3.7  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../d4z/d4z.html">
+            
+                <a href="../d4z/d4z.html">
+            
+                    
+                    第四章    子查询和组函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../d4z/4.1子查询.html">
+            
+                <a href="../d4z/4.1子查询.html">
+            
+                    
+                    4.1  子查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../d4z/4.2组函数.html">
+            
+                <a href="../d4z/4.2组函数.html">
+            
+                    
+                    4.2  组函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../d4z/4.3本章练习.html">
+            
+                <a href="../d4z/4.3本章练习.html">
+            
+                    
+                    4.3  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../d5z/d5z.html">
+            
+                <a href="../d5z/d5z.html">
+            
+                    
+                    第五章    操作数据和管理表
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../d5z/5.1数据操纵语言DML.html">
+            
+                <a href="../d5z/5.1数据操纵语言DML.html">
+            
+                    
+                    5.1  数据操纵语言DML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../d5z/5.2事务处理.html">
+            
+                <a href="../d5z/5.2事务处理.html">
+            
+                    
+                    5.2  事务处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../d5z/5.3表.html">
+            
+                <a href="../d5z/5.3表.html">
+            
+                    
+                    5.3  表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="../d5z/5.4内置约束.html">
+            
+                <a href="../d5z/5.4内置约束.html">
+            
+                    
+                    5.4  内置约束
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="../d5z/5.5本章练习.html">
+            
+                <a href="../d5z/5.5本章练习.html">
+            
+                    
+                    5.5  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../d6z/d6z.html">
+            
+                <a href="../d6z/d6z.html">
+            
+                    
+                    第六章    视图、序列和索引
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="../d6z/6.1视图.html">
+            
+                <a href="../d6z/6.1视图.html">
+            
+                    
+                    6.1  视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.2" data-path="../d6z/6.2视图的DML操作.html">
+            
+                <a href="../d6z/6.2视图的DML操作.html">
+            
+                    
+                    6.2  视图的DML操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.3" data-path="../d6z/6.3序列.html">
+            
+                <a href="../d6z/6.3序列.html">
+            
+                    
+                    6.3  序列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.4" data-path="../d6z/6.4索引.html">
+            
+                <a href="../d6z/6.4索引.html">
+            
+                    
+                    6.4  索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.5" data-path="../d6z/6.5本章练习.html">
+            
+                <a href="../d6z/6.5本章练习.html">
+            
+                    
+                    6.5  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../d7z/d7z.html">
+            
+                <a href="../d7z/d7z.html">
+            
+                    
+                    第七章    访问控制和其他数据库对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1.1" data-path="../d7z/7.1访问控制.html">
+            
+                <a href="../d7z/7.1访问控制.html">
+            
+                    
+                    7.1  访问控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.2" data-path="../d7z/7.2子程序.html">
+            
+                <a href="../d7z/7.2子程序.html">
+            
+                    
+                    7.2  子程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.3" data-path="../d7z/7.3本章练习.html">
+            
+                <a href="../d7z/7.3本章练习.html">
+            
+                    
+                    7.3  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../d8z/d8z.html">
+            
+                <a href="../d8z/d8z.html">
+            
+                    
+                    第八章    备份、恢复和SQL优化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1.1" data-path="../d8z/8.1数据库备份与恢复概述.html">
+            
+                <a href="../d8z/8.1数据库备份与恢复概述.html">
+            
+                    
+                    8.1  数据库备份与恢复概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.2" data-path="../d8z/8.2SQL优化.html">
+            
+                <a href="../d8z/8.2SQL优化.html">
+            
+                    
+                    8.2  SQL优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.3" data-path="../d8z/8.3本章练习.html">
+            
+                <a href="../d8z/8.3本章练习.html">
+            
+                    
+                    8.3  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >3.5  多表查询</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="35--&#x591A;&#x8868;&#x67E5;&#x8BE2;">3.5  &#x591A;&#x8868;&#x67E5;&#x8BE2;</h2>
+<p>&#x2003;&#x2003;&#x5728;employees&#x8868;&#x4E2D;&#xFF0C;&#x96C7;&#x5458;&#x7684;&#x804C;&#x4F4D;&#x662F;&#x901A;&#x8FC7;job_id&#x8BB0;&#x5F55;&#x7684;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x804C;&#x4F4D;&#x7684;&#x5177;&#x4F53;&#x4FE1;&#x606F;&#x5B58;&#x653E;&#x5728;jobs&#x8868;&#x91CC;&#x3002;&#x5BF9;&#x7528;&#x6237;&#x800C;&#x8A00;&#xFF0C;&#x5F80;&#x5F80;&#x5E76;&#x4E0D;&#x6E05;&#x695A;&#x6BCF;&#x4E2A;job_id&#x7684;&#x542B;&#x4E49;&#xFF0C;&#x800C;&#x662F;&#x5E0C;&#x671B;&#x80FD;&#x76F4;&#x63A5;&#x770B;&#x5230;&#x6BCF;&#x4E2A;&#x96C7;&#x5458;&#x8BE6;&#x7EC6;&#x7684;&#x804C;&#x4F4D;&#x4FE1;&#x606F;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x5C31;&#x9700;&#x8981;&#x5C06;&#x4E24;&#x4E2A;&#x6216;&#x4E24;&#x4E2A;&#x4EE5;&#x4E0A;&#x7684;&#x8868;&#x8FDB;&#x884C;&#x5173;&#x8054;&#x67E5;&#x8BE2;&#xFF0C;&#x4EE5;&#x83B7;&#x5F97;&#x9700;&#x8981;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<h3 id="351--&#x7B49;&#x503C;&#x8FDE;&#x63A5;">3.5.1  &#x7B49;&#x503C;&#x8FDE;&#x63A5;</h3>
+<p>&#x2003;&#x2003;&#x5F53;&#x9700;&#x8981;&#x7684;&#x6570;&#x636E;&#x9700;&#x4ECE;&#x591A;&#x4E2A;&#x8868;&#x4E2D;&#x67E5;&#x8BE2;&#x5F97;&#x5230;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x91C7;&#x7528;&#x591A;&#x8868;&#x8FDE;&#x63A5;&#x67E5;&#x8BE2;&#xFF0C;&#x5176;&#x8BED;&#x6CD5;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>SELECT  table1.column,  table2.column
+
+FROM  table1,  table2
+
+WHERE  table1.column1  =  table2.column2
+</code></pre><p>&#x2003;&#x2003;&#x5176;&#x4E2D;SELECT&#x5B50;&#x53E5;&#x4E2D;&#x53EF;&#x9009;&#x62E9;&#x591A;&#x4E2A;&#x8868;&#x7684;&#x591A;&#x4E2A;&#x5B57;&#x6BB5;&#xFF0C;FROM&#x5B50;&#x53E5;&#x4E2D;&#x8868;&#x660E;&#x5B57;&#x6BB5;&#x6765;&#x81EA;&#x591A;&#x4E2A;&#x8868;&#xFF0C;&#x800C;WHERE&#x5B50;&#x53E5;&#x4E3A;&#x8FDE;&#x63A5;&#x6761;&#x4EF6;&#xFF0C;table1.column1=table2.column2&#x5373;&#x5177;&#x4F53;&#x7684;&#x8FDE;&#x63A5;&#x6761;&#x4EF6;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x5728;&#x591A;&#x8868;&#x8FDE;&#x63A5;&#x67E5;&#x8BE2;&#x7684;SELECT&#x5B50;&#x53E5;&#x4E2D;&#xFF0C;&#x5B57;&#x6BB5;&#x540D;&#x524D;&#x9762;&#x7528;&#x8868;&#x540D;&#x53EF;&#x4EE5;&#x4F7F;&#x8BED;&#x4E49;&#x6E05;&#x695A;&#xFF0C;&#x5E76;&#x4E14;&#x52A0;&#x5FEB;&#x6570;&#x636E;&#x5E93;&#x8BBF;&#x95EE;&#xFF0C;&#x63D0;&#x9AD8;&#x6027;&#x80FD;&#xFF1B;&#x5982;&#x679C;&#x76F8;&#x540C;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#x51FA;&#x73B0;&#x5728;&#x591A;&#x4E2A;&#x8868;&#x4E2D;&#xFF0C;&#x5B57;&#x6BB5;&#x540D;&#x5FC5;&#x987B;&#x52A0;&#x8868;&#x540D;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x5F15;&#x8D77;&#x51B2;&#x7A81;&#x3002;&#x4E3A;&#x4E86;&#x5C06;N &#x4E2A;&#x8868;&#x8FDE;&#x63A5;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x81F3;&#x5C11;&#x9700;&#x8981;N-1&#x4E2A;&#x8FDE;&#x63A5;&#x6761;&#x4EF6;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x9996;&#x5148;&#x4ECB;&#x7ECD;&#x6700;&#x7B80;&#x5355;&#x4E5F;&#x6700;&#x5E38;&#x7528;&#x7684;&#x7B49;&#x503C;&#x8FDE;&#x63A5;&#xFF0C;&#x7B49;&#x503C;&#x8FDE;&#x63A5;&#x4E5F;&#x5E38;&#x88AB;&#x79F0;&#x4E3A;&#x7B80;&#x5355;&#x8FDE;&#x63A5;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x4E3A;&#x4E86;&#x786E;&#x5B9A;&#x4E00;&#x4E2A;&#x96C7;&#x5458;&#x7684;&#x804C;&#x4F4D;&#x4FE1;&#x606F;&#xFF0C;&#x9700;&#x8981;&#x6BD4;&#x8F83;employees&#x8868;&#x4E2D;&#x7684;job_id&#x5B57;&#x6BB5;&#x548C;jobs&#x8868;&#x4E2D;&#x7684; job_id &#x5B57;&#x6BB5;&#x7684;&#x503C;&#xFF0C;&#x5F53;&#x4E24;&#x4E2A;&#x8868;&#x4E2D;job_id &#x5B57;&#x6BB5;&#x7684;&#x503C;&#x76F8;&#x7B49;&#x65F6;&#xFF0C;&#x624D;&#x53EF;&#x8FDE;&#x63A5;&#x51FA;&#x96C7;&#x5458;&#x7684;&#x5177;&#x4F53;&#x804C;&#x4F4D;&#x4FE1;&#x606F;&#xFF0C;&#x5B8C;&#x6210;&#x8BE5;&#x6848;&#x4F8B;&#x7684;&#x7B49;&#x503C;&#x8FDE;&#x63A5;SQL&#x8BED;&#x53E5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>SELECT employees.first_name, jobs.job_title, employees.salary
+
+FROM employees, jobs
+
+WHERE employees.job_id = jobs.job_id
+</code></pre><p>&#x2003;&#x2003;&#x6267;&#x884C;&#x8BE5;SQL&#x8BED;&#x53E5;&#xFF0C;&#x90E8;&#x5206;&#x663E;&#x793A;&#x7ED3;&#x679C;&#x5982;&#x56FE;3.13&#x6240;&#x793A;&#x3002;</p>
+<p align="center"><img src="../../img/d3z/tu3.13.png"></p>  
+<p align="center">&#x56FE;3.13  &#x7B49;&#x503C;&#x8FDE;&#x63A5;</p>  
+
+<h3 id="352--&#x8868;&#x522B;&#x540D;">3.5.2  &#x8868;&#x522B;&#x540D;</h3>
+<p>&#x2003;&#x2003;&#x4E3A;&#x4E86;&#x63D0;&#x9AD8;&#x6027;&#x80FD;&#x3001;&#x907F;&#x514D;&#x5B57;&#x6BB5;&#x540D;&#x51B2;&#x7A81;&#xFF0C;&#x5728;&#x591A;&#x8868;&#x8FDE;&#x63A5;&#x67E5;&#x8BE2;&#x7684;SELECT&#x5B50;&#x53E5;&#x4E2D;&#xFF0C;&#x5E94;&#x8BE5;&#x4EE5;&#x201C;&#x8868;&#x540D;.&#x5B57;&#x6BB5;&#x540D;&#x201D;&#x7684;&#x65B9;&#x5F0F;&#x547D;&#x540D;&#x3002;&#x4E0D;&#x8FC7;&#x6309;&#x7167;&#x6B64;&#x89C4;&#x5219;&#x7F16;&#x5199;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x5728;&#x6240;&#x9009;&#x5B57;&#x6BB5;&#x6BD4;&#x8F83;&#x591A;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;SELECT&#x5B50;&#x53E5;&#x5F80;&#x5F80;&#x5197;&#x957F;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8868;&#x522B;&#x540D;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x548C;&#x7ED9;&#x5B57;&#x6BB5;&#x8D77;&#x522B;&#x540D;&#x4E00;&#x6837;&#xFF0C;&#x8868;&#x522B;&#x540D;&#x5C31;&#x662F;&#x7ED9;&#x8868;&#x8D77;&#x4E86;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x540D;&#x5B57;&#x3002;&#x4E0D;&#x8FC7;&#x4E24;&#x8005;&#x7684;&#x4E0D;&#x540C;&#x70B9;&#x5728;&#x4E8E;&#xFF0C;&#x5B57;&#x6BB5;&#x522B;&#x540D;&#x901A;&#x5E38;&#x662F;&#x4E3A;&#x4E86;&#x663E;&#x793A;&#x7684;&#x5B57;&#x6BB5;&#x6807;&#x9898;&#x6613;&#x4E8E;&#x7406;&#x89E3;&#x800C;&#x8D77;&#x7684;&#xFF0C;&#x800C;&#x8868;&#x522B;&#x540D;&#x662F;&#x4E3A;&#x4E86;&#x8BA9;SQL&#x8BED;&#x53E5;&#x7B80;&#x5355;&#x3001;&#x6613;&#x8BFB;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x4FEE;&#x6539;&#x4E0A;&#x9762;&#x7684;SQL&#x8BED;&#x53E5;&#xFF0C;&#x7ED9;employees&#x8868;&#x8D77;&#x522B;&#x540D;&#x4E3A;e&#xFF0C;&#x7ED9;jobs&#x8868;&#x8D77;&#x522B;&#x540D;&#x4E3A;j&#xFF0C;&#x4FEE;&#x6539;&#x5B8C;&#x7684;SQL&#x8BED;&#x53E5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>SELECT e.first_name, j.job_title, e.salary
+
+FROM employees e, jobs j
+
+WHERE e.job_id = j.job_id
+</code></pre><p>&#x2003;&#x2003;&#x4E24;&#x6BB5;SQL&#x8BED;&#x53E5;&#x76F8;&#x6BD4;&#xFF0C;&#x4F7F;&#x7528;&#x4E86;&#x8868;&#x522B;&#x540D;&#x7684;&#x770B;&#x8D77;&#x6765;&#x66F4;&#x7B80;&#x5355;&#x3001;&#x6613;&#x8BFB;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x5728;&#x4F7F;&#x7528;&#x8868;&#x522B;&#x540D;&#x65F6;&#xFF0C;&#x8981;&#x6CE8;&#x610F;&#x8868;&#x522B;&#x540D;&#x6700;&#x591A;&#x53EF;&#x4EE5;&#x6709;30&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x4E0D;&#x8FC7;&#x76F8;&#x4FE1;&#x6CA1;&#x6709;&#x54EA;&#x4E2A;&#x7A0B;&#x5E8F;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x4F1A;&#x5199;&#x51FA;&#x8FD9;&#x4E48;&#x957F;&#x7684;&#x8868;&#x522B;&#x540D;&#xFF1B;&#x8868;&#x522B;&#x540D;&#x7684;&#x4F5C;&#x7528;&#x8303;&#x56F4;&#x5728;&#x6574;&#x4E2A;SELECT&#x8BED;&#x53E5;&#x4E2D;&#xFF0C;&#x79BB;&#x5F00;&#x8FD9;&#x4E2A;SELECT&#x8BED;&#x53E5;&#x5373;&#x65E0;&#x6548;&#x3002;</p>
+<h3 id="353--&#x591A;&#x8868;&#x7B49;&#x503C;&#x8FDE;&#x63A5;">3.5.3  &#x591A;&#x8868;&#x7B49;&#x503C;&#x8FDE;&#x63A5;</h3>
+<p>&#x2003;&#x2003;&#x524D;&#x9762;&#x5728;&#x8BB2;&#x7B49;&#x503C;&#x8FDE;&#x63A5;&#x65F6;&#xFF0C;&#x5C06;employees&#x8868;&#x548C;jobs&#x8868;&#x901A;&#x8FC7;job_id&#x8FDB;&#x884C;&#x4E86;&#x7B49;&#x503C;&#x8FDE;&#x63A5;&#x3002;&#x5982;&#x679C;&#x8FD8;&#x60F3;&#x5728;&#x5BF9;employees&#x8868;&#x8FDB;&#x884C;&#x67E5;&#x8BE2;&#x65F6;&#x663E;&#x793A;&#x96C7;&#x5458;&#x7684;&#x90E8;&#x95E8;&#x540D;&#x79F0;&#xFF08;department_name&#xFF09;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x90E8;&#x95E8;&#x7F16;&#x53F7;&#xFF08;department_id&#xFF09;&#xFF0C;&#x8BE5;&#x600E;&#x4E48;&#x64CD;&#x4F5C;&#x5462;&#xFF1F;</p>
+<p>&#x2003;&#x2003;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x4F7F;&#x7528;&#x591A;&#x4E2A;&#x8FDE;&#x63A5;&#x6761;&#x4EF6;&#xFF0C;&#x8FDB;&#x884C;&#x591A;&#x8868;&#x7684;&#x7B49;&#x503C;&#x8FDE;&#x63A5;&#xFF0C;&#x5177;&#x4F53;SQL&#x8BED;&#x53E5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>SELECT e.first_name, j.job_title,d.department_name, e.salary
+
+FROM employees e, jobs j,departments d
+
+WHERE e.job_id = j.job_id AND e.department_id = d.department_id
+</code></pre><p>&#x2003;&#x2003;&#x5728;SQL&#x8BED;&#x53E5;&#x7684;WHERE&#x5B50;&#x53E5;&#x91CC;&#xFF0C;&#x7528;AND&#x5C06;&#x4E24;&#x4E2A;&#x8FDE;&#x63A5;&#x6761;&#x4EF6;&#x7ED3;&#x5408;&#x8D77;&#x6765;&#x3002;&#x6267;&#x884C;&#x8BE5;SQL&#x8BED;&#x53E5;&#xFF0C;&#x90E8;&#x5206;&#x663E;&#x793A;&#x7ED3;&#x679C;&#x5982;&#x56FE;3.14&#x6240;&#x793A;&#x3002;</p>
+<p align="center"><img src="../../img/d3z/tu3.14.png"></p>  
+<p align="center">&#x56FE;3.14  &#x591A;&#x8868;&#x7B49;&#x503C;&#x8FDE;&#x63A5;</p>  
+
+<p>&#x2003;&#x2003;&#x5206;&#x6790;&#x8BE5;&#x591A;&#x8868;&#x8FDE;&#x63A5;&#xFF0C;&#x5176;&#x6838;&#x5FC3;&#x8868;&#x662F;employees&#x8868;&#xFF0C;&#x5206;&#x522B;&#x901A;&#x8FC7;job_id&#x548C;jobs&#x8868;&#x5173;&#x8054;&#x8FDE;&#x63A5;&#xFF08;&#x5176;&#x4E2D;jobs&#x8868;&#x4E2D;&#x7684;job_id&#x5B57;&#x6BB5;&#x662F;&#x4E3B;&#x952E;&#xFF0C;employees&#x8868;&#x4E2D;&#x7684;job_id&#x5B57;&#x6BB5;&#x662F;&#x5916;&#x952E;&#xFF09;&#xFF0C;&#x901A;&#x8FC7;department_id&#x548C;departments&#x8868;&#x5173;&#x8054;&#x8FDE;&#x63A5;&#xFF08;&#x5176;&#x4E2D;departments&#x8868;&#x4E2D;&#x7684;department_id&#x5B57;&#x6BB5;&#x662F;&#x4E3B;&#x952E;&#xFF0C;employees&#x8868;&#x4E2D;&#x7684;department_id&#x5B57;&#x6BB5;&#x662F;&#x5916;&#x952E;&#xFF09;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x5982;&#x679C;&#x8FD8;&#x9700;&#x8981;&#x5728;&#x5BF9;employees&#x8868;&#x8FDB;&#x884C;&#x67E5;&#x8BE2;&#x65F6;&#x663E;&#x793A;&#x96C7;&#x5458;&#x6240;&#x5728;&#x7684;&#x57CE;&#x5E02;&#xFF0C;&#x8BE5;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x5462;&#xFF1F;&#x901A;&#x8FC7;&#x5206;&#x6790;&#xFF0C;employees&#x8868;&#x4E2D;&#x6CA1;&#x6709;&#x548C;&#x57CE;&#x5E02;&#x76F8;&#x5173;&#x8054;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x4F46;&#x548C;employees&#x8868;&#x5173;&#x8054;&#x7684;departments&#x8868;&#x4E2D;&#x6709;&#x6240;&#x5728;&#x5730;&#x7F16;&#x53F7;&#xFF08;location_id&#xFF09;&#xFF0C;&#x800C;&#x901A;&#x8FC7;location_id&#x53EF;&#x5173;&#x8054;&#x5230;locations&#x8868;&#xFF0C;&#x8BE5;&#x8868;&#x4E2D;&#x6709;&#x57CE;&#x5E02;&#x7684;&#x4FE1;&#x606F;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x5728;departments&#x8868;&#x4E0A;&#x8FDB;&#x884C;&#x591A;&#x8868;&#x7B49;&#x503C;&#x8FDE;&#x63A5;&#xFF0C;&#x5176;SQL&#x8BED;&#x53E5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>SELECT e.first_name, j.job_title,d.department_name, l.city, e.salary
+
+FROM employees e, jobs j,departments d,locations l 
+
+WHERE e.job_id = j.job_id AND e.department_id = d.department_id AND d.location_id = l.location_id
+</code></pre><p>&#x2003;&#x2003;&#x4E3A;&#x4E86;&#x66F4;&#x597D;&#x5730;&#x4ECB;&#x7ECD;&#x591A;&#x8868;&#x8FDE;&#x63A5;&#xFF0C;&#x56FE;3.15&#x663E;&#x793A;&#x4E86;&#x56DB;&#x4E2A;&#x8868;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x3002;</p>
+<p align="center"><img src="../../img/d3z/tu3.15.png"></p>  
+<p align="center">&#x56FE;3.15  &#x591A;&#x8868;&#x8FDE;&#x63A5;&#x793A;&#x610F;&#x56FE;</p>  
+
+<h3 id="354--&#x81EA;&#x7136;&#x8FDE;&#x63A5;&#x3001;using&#x5B50;&#x53E5;&#x548C;on&#x5B50;&#x53E5;">3.5.4  &#x81EA;&#x7136;&#x8FDE;&#x63A5;&#x3001;USING&#x5B50;&#x53E5;&#x548C;ON&#x5B50;&#x53E5;</h3>
+<p>&#x2003;&#x2003;&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x8868;&#x4E2D;&#xFF0C;&#x6709;&#x76F8;&#x540C;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#x4E14;&#x5B57;&#x6BB5;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x76F8;&#x540C;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Oracle&#x7684;&#x81EA;&#x7136;&#x8FDE;&#x63A5;&#x5B9E;&#x73B0;&#x4E24;&#x8868;&#x4E4B;&#x95F4;&#x7684;&#x7B49;&#x503C;&#x8FDE;&#x63A5;&#xFF0C;&#x81EA;&#x7136;&#x8FDE;&#x63A5;&#x662F;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x7684;&#x7B49;&#x503C;&#x8FDE;&#x63A5;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x5728;&#x7B2C;3.5.2&#x8282;&#x4E2D;&#xFF0C;&#x5B9E;&#x73B0;employees&#x8868;&#x548C;jobs&#x8868;&#x7684;&#x7B49;&#x503C;&#x8FDE;&#x63A5;&#x7684;SQL&#x8BED;&#x53E5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>SELECT e.first_name, j.job_title, e.salary
+
+FROM employees e, jobs j
+
+WHERE e.job_id = j.job_id
+</code></pre><p>&#x2003;&#x2003;&#x8FD9;&#x4E24;&#x4E2A;&#x8868;&#x90FD;&#x7528;&#x76F8;&#x540C;&#x7684;&#x5B57;&#x6BB5;&#x540D;job_id&#xFF0C;&#x4E14;&#x8FD9;&#x4E24;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x6570;&#x636E;&#x6570;&#x578B;&#x90FD;&#x662F;VARCHAR2&#x7C7B;&#x578B;&#xFF0C;&#x6EE1;&#x8DB3;&#x81EA;&#x7136;&#x8FDE;&#x63A5;&#x7684;&#x6761;&#x4EF6;&#x3002;&#x53EF;&#x4EE5;&#x5C06;&#x4E0A;&#x9762;&#x7684;SQL&#x8BED;&#x53E5;&#x8C03;&#x6574;&#x5982;&#x4E0B;&#xFF0C;&#x7528;&#x81EA;&#x7136;&#x8FDE;&#x63A5;&#xFF08;NATURAL JOIN&#xFF09;&#x7684;&#x65B9;&#x5F0F;&#x5B8C;&#x6210;&#x7B49;&#x503C;&#x8FDE;&#x63A5;&#x3002;</p>
+<pre><code>SELECT e.first_name, j.job_title, e.salary
+
+FROM employees e 
+
+NATURAL JOIN jobs j
+</code></pre><p>&#x2003;&#x2003;&#x5728;&#x4F7F;&#x7528;&#x81EA;&#x7136;&#x8FDE;&#x63A5;&#x7684;&#x65F6;&#x5019;&#x9700;&#x8981;&#x6CE8;&#x610F;&#xFF0C;&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x8868;&#x4E2D;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#x76F8;&#x540C;&#xFF0C;&#x4F46;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E0D;&#x540C;&#xFF0C;&#x7528;&#x81EA;&#x7136;&#x8FDE;&#x63A5;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x4E0A;&#x9762;&#x91C7;&#x7528;NATURAL JOIN&#x5173;&#x952E;&#x5B57;&#x5B9E;&#x73B0;&#x4E86;&#x81EA;&#x7136;&#x8FDE;&#x63A5;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4E0D;&#x4F7F;&#x7528;&#x81EA;&#x7136;&#x8FDE;&#x63A5;&#xFF0C;&#x800C;&#x4F7F;&#x7528;USING&#x5B50;&#x53E5;&#x660E;&#x786E;&#x6307;&#x5B9A;&#x8FDE;&#x63A5;&#x5B57;&#x6BB5;&#xFF0C;&#x5176;SQL&#x8BED;&#x53E5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>SELECT e.first_name, j.job_title, e.salary
+
+FROM employees e JOIN jobs j
+
+USING(job_id)
+</code></pre><p>&#x2003;&#x2003;&#x53E6;&#x5916;&#x6709;&#x4E00;&#x70B9;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x4E0D;&#x7BA1;&#x662F;&#x81EA;&#x7136;&#x8FDE;&#x63A5;&#x8FD8;&#x662F;&#x4F7F;&#x7528;USING&#x5B50;&#x53E5;&#xFF0C;&#x5728;&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x5B57;&#x6BB5;&#x65F6;&#xFF0C;&#x90FD;&#x4E0D;&#x80FD;&#x5728;&#x524D;&#x9762;&#x52A0;&#x4E0A;&#x8868;&#x7684;&#x524D;&#x7F00;&#xFF0C;&#x56E0;&#x4E3A;&#x6B64;&#x65F6;&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x5DF2;&#x7ECF;&#x662F;&#x8FDE;&#x63A5;&#x5B57;&#x6BB5;&#xFF0C;&#x4E0D;&#x518D;&#x5C5E;&#x4E8E;&#x67D0;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x8868;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x9664;&#x4E86;&#x53EF;&#x4EE5;&#x7528;USING&#x5B50;&#x53E5;&#x6307;&#x5B9A;&#x8FDE;&#x63A5;&#x5B57;&#x6BB5;&#x5916;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;ON&#x5B50;&#x53E5;&#x5B8C;&#x6210;&#x7C7B;&#x4F3C;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4E0A;&#x9762;&#x4F7F;&#x7528;USING&#x5B50;&#x53E5;&#x7684;SQL&#x8BED;&#x53E5;&#xFF0C;&#x7B49;&#x4EF7;&#x7684;&#x4F7F;&#x7528;ON&#x5B50;&#x53E5;&#x7684;SQL&#x8BED;&#x53E5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>SELECT e.first_name, j.job_title, e.salary
+
+FROM employees e JOIN jobs j
+
+ON (e.job_id = j.job_id)
+</code></pre><p>&#x2003;&#x2003;ON&#x5B50;&#x53E5;&#x6BD4;USING&#x5B50;&#x53E5;&#x66F4;&#x4E3A;&#x7075;&#x6D3B;&#xFF0C;&#x56E0;&#x4E3A;USING&#x5B50;&#x53E5;&#x91CC;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x540D;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x53EA;&#x6709;&#x4E24;&#x4E2A;&#x8868;&#x4E2D;&#x90FD;&#x6709;&#x76F8;&#x540C;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#x65F6;&#xFF0C;&#x624D;&#x80FD;&#x4F7F;&#x7528;USING&#x5B50;&#x53E5;&#x6307;&#x5B9A;&#x8FDE;&#x63A5;&#x5B57;&#x6BB5;&#x3002;&#x800C;ON&#x5B50;&#x53E5;&#x548C;&#x7B49;&#x503C;&#x8FDE;&#x63A5;&#x4E00;&#x6837;&#xFF0C;&#x7528;&#x4E8E;&#x8FDE;&#x63A5;&#x7684;&#x4E24;&#x4E2A;&#x5B57;&#x6BB5;&#xFF0C;&#x5176;&#x5B57;&#x6BB5;&#x540D;&#x53EF;&#x4EE5;&#x4E0D;&#x540C;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x4E0A;&#x9762;&#x4ECB;&#x7ECD;&#x4E86;&#x81EA;&#x7136;&#x8FDE;&#x63A5;&#x3001;USING&#x5B50;&#x53E5;&#x548C;ON&#x5B50;&#x53E5;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x7EE7;&#x7EED;&#x7ED9;employees&#x8868;&#x548C;departments&#x8868;&#x5EFA;&#x7ACB;&#x81EA;&#x7136;&#x8FDE;&#x63A5;&#xFF0C;&#x5176;SQL&#x8BED;&#x53E5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>SELECT e.first_name, d.department_name, e.salary
+
+FROM employees e
+
+NATURAL JOIN departments d
+</code></pre><p>&#x2003;&#x2003;&#x6267;&#x884C;&#x8BE5;SQL&#x8BED;&#x53E5;&#xFF0C;&#x8FD4;&#x56DE;32&#x6761;&#x8BB0;&#x5F55;&#xFF0C;&#x5982;&#x56FE;3.16&#x6240;&#x793A;&#x3002;&#x8BE5;&#x81EA;&#x7136;&#x8FDE;&#x63A5;&#x7B49;&#x4EF7;&#x7684;&#x7B49;&#x503C;&#x8FDE;&#x63A5;&#x7684;SQL&#x8BED;&#x53E5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>SELECT e.first_name, d.department_name, e.salary   
+
+FROM employees e,departments d
+
+WHERE e.department_id = d.department_id
+</code></pre><p>&#x2003;&#x2003;&#x6267;&#x884C;&#x7B49;&#x503C;&#x8FDE;&#x63A5;SQL&#x8BED;&#x53E5;&#xFF0C;&#x5374;&#x8FD4;&#x56DE;&#x4E86;106&#x6761;&#x8BB0;&#x5F55;&#xFF0C;&#x5982;&#x56FE;3.17&#x6240;&#x793A;&#x3002;&#x8FD9;&#x8BF4;&#x660E;&#x8FD9;&#x4E24;&#x6BB5;SQL&#x8BED;&#x53E5;&#x4E0D;&#x7B49;&#x4EF7;&#xFF0C;&#x4F46;&#x95EE;&#x9898;&#x51FA;&#x5728;&#x54EA;&#x91CC;&#x5462;&#xFF1F;</p>
+<p align="center"><img src="../../img/d3z/tu3.16.png"></p>  
+<p align="center">&#x56FE;3.16  &#x81EA;&#x7136;&#x8FDE;&#x63A5;</p>  
+
+<p align="center"><img src="../../img/d3z/tu3.17.png"></p>  
+<p align="center">&#x56FE;3.17  &#x7B49;&#x503C;&#x8FDE;&#x63A5;</p>  
+
+
+
+<p>&#x2003;&#x2003;&#x901A;&#x8FC7;&#x67E5;&#x770B;&#x8FD9;&#x4E24;&#x4E2A;&#x8868;&#x7684;&#x8868;&#x7ED3;&#x6784;&#x540E;&#x53D1;&#x73B0;&#xFF0C;&#x4E24;&#x8868;&#x4E2D;&#x4E0D;&#x4EC5;&#x6709;&#x4E00;&#x4E2A;department_id&#x5B57;&#x6BB5;&#x540D;&#x548C;&#x7C7B;&#x578B;&#x76F8;&#x540C;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;manager_id&#x5B57;&#x6BB5;&#x540D;&#x548C;&#x7C7B;&#x578B;&#x76F8;&#x540C;&#x3002;&#x6240;&#x4EE5;&#x5728;&#x81EA;&#x7136;&#x8FDE;&#x63A5;&#x65F6;&#xFF0C;&#x7B49;&#x4EF7;&#x4E8E;&#x5BF9;&#x8FD9;&#x4E24;&#x4E2A;&#x5B57;&#x6BB5;&#x540C;&#x65F6;&#x8FDB;&#x884C;&#x4E86;&#x7B49;&#x503C;&#x8FDE;&#x63A5;&#xFF0C;&#x6240;&#x4EE5;&#x8BE5;&#x81EA;&#x7136;&#x8FDE;&#x63A5;&#x7B49;&#x4EF7;&#x7684;&#x7B49;&#x503C;&#x8FDE;&#x63A5;&#xFF0C;&#x5176;SQL&#x8BED;&#x53E5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>SELECT e.first_name, d.department_name, e.salary   
+
+FROM employees e,departments d
+
+WHERE e.department_id = d.department_id AND e.manager_id = d.manager_id
+</code></pre><p>&#x2003;&#x2003;&#x6267;&#x884C;&#x8BE5;SQL&#x8BED;&#x53E5;&#xFF0C;&#x8FD4;&#x56DE;&#x548C;&#x81EA;&#x7136;&#x8FDE;&#x63A5;&#x4E00;&#x6837;&#x7684;32&#x6761;&#x8BB0;&#x5F55;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x4E4B;&#x524D;&#x7684;&#x81EA;&#x7136;&#x8FDE;&#x63A5;&#x90FD;&#x662F;&#x5728;&#x4E24;&#x4E2A;&#x8868;&#x4E4B;&#x95F4;&#x7684;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x7684;SQL&#x8BED;&#x53E5;&#x5B9E;&#x73B0;&#x4E86;employees&#x8868;&#x3001;departments&#x8868;&#x548C;locations&#x8868;&#x4E4B;&#x95F4;&#x7684;&#x81EA;&#x7136;&#x8FDE;&#x63A5;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;&#x4E09;&#x5411;&#x8FDE;&#x63A5;&#xFF1A;</p>
+<pre><code>SELECT e.first_name, d.department_name, l.city, e.salary    
+
+FROM employees e
+
+NATURAL JOIN departments d
+
+NATURAL JOIN locations l
+</code></pre><p>&#x2003;&#x2003;&#x5176;&#x7B49;&#x4EF7;&#x7B49;&#x503C;&#x8FDE;&#x63A5;&#x7684;SQL&#x8BED;&#x53E5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>SELECT e.first_name, d.department_name, l.city, e.salary    
+
+FROM employees e,departments d,locations l
+
+WHERE e.department_id = d.department_id AND e.manager_id = d.manager_id AND d.location_id = l.location_id
+</code></pre><h3 id="355--&#x81EA;&#x5173;&#x8054;">3.5.5  &#x81EA;&#x5173;&#x8054;</h3>
+<p>&#x2003;&#x2003;&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x81EA;&#x5173;&#x8054;&#xFF0C;&#x7528;&#x4E00;&#x5F20;&#x8868;&#x5B9E;&#x73B0;&#x591A;&#x8868;&#x67E5;&#x8BE2;&#xFF0C;SQL&#x8BED;&#x53E5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>--&#x67E5;&#x8BE2;&#x5458;&#x5DE5;&#x59D3;&#x540D;&#x548C;&#x76F8;&#x5E94;&#x7684;&#x9886;&#x5BFC;&#x59D3;&#x540D;
+
+SELECT e.first_name &#x5458;&#x5DE5;&#x7684;&#x59D3;&#x540D;,b.first_name &#x8001;&#x677F;&#x59D3;&#x540D; FROM employees e, employees b
+
+WHERE e.manager_id=b.employee_id
+</code></pre><p>&#x2003;&#x2003;&#x4E0A;&#x8FF0;SQL&#x8BED;&#x53E5;&#x4E2D;&#xFF0C;&#x5C06;&#x540C;&#x4E00;&#x5F20;employees&#x8868;&#x901A;&#x8FC7;&#x522B;&#x540D;&#x770B;&#x6210;&#x4E86;&#x4E24;&#x5F20;&#x4E0D;&#x540C;&#x7684;&#x8868;&#xFF1A;&#x5C06;&#x522B;&#x540D;&#x4E3A;e&#x7684;&#x8868;&#x770B;&#x6210;&#x5458;&#x5DE5;&#x8868;&#xFF0C;&#x5C06;&#x522B;&#x540D;&#x4E3A;b&#x7684;&#x8868;&#x770B;&#x6210;&#x9886;&#x5BFC;&#x8868;&#xFF0C;&#x518D;&#x5728;&#x5458;&#x5DE5;&#x8868;&#x548C;&#x9886;&#x5BFC;&#x8868;&#x4E4B;&#x95F4;&#x8FDB;&#x884C;&#x591A;&#x8868;&#x67E5;&#x8BE2;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3.4通用函数.html" class="navigation navigation-prev " aria-label="Previous page: 3.4  通用函数">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="3.6外连接.html" class="navigation navigation-next " aria-label="Next page: 3.6  外连接">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.5  多表查询","level":"4.1.5","depth":2,"next":{"title":"3.6  外连接","level":"4.1.6","depth":2,"path":"chapters/d3z/3.6外连接.md","ref":"chapters/d3z/3.6外连接.md","articles":[]},"previous":{"title":"3.4  通用函数","level":"4.1.4","depth":2,"path":"chapters/d3z/3.4通用函数.md","ref":"chapters/d3z/3.4通用函数.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/d3z/3.5多表查询.md","mtime":"2020-04-22T08:55:56.094Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-22T09:12:58.227Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
