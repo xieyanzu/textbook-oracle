@@ -868,8 +868,8 @@ FROM employees, jobs
 
 WHERE employees.job_id = jobs.job_id
 </code></pre><p>&#x2003;&#x2003;&#x6267;&#x884C;&#x8BE5;SQL&#x8BED;&#x53E5;&#xFF0C;&#x90E8;&#x5206;&#x663E;&#x793A;&#x7ED3;&#x679C;&#x5982;&#x56FE;3.13&#x6240;&#x793A;&#x3002;</p>
-<p align="center"><img src="../../img/d3z/tu3.13.png"></p>  
-<p align="center">&#x56FE;3.13  &#x7B49;&#x503C;&#x8FDE;&#x63A5;</p>  
+<center><img src="https://labfile.oss.aliyuncs.com/library/oracle_textbook/img/d3z/tu3.13.png"></center>  
+<center>&#x56FE;3.13  &#x7B49;&#x503C;&#x8FDE;&#x63A5;</center>  
 
 <h3 id="352--&#x8868;&#x522B;&#x540D;">3.5.2  &#x8868;&#x522B;&#x540D;</h3>
 <p>&#x2003;&#x2003;&#x4E3A;&#x4E86;&#x63D0;&#x9AD8;&#x6027;&#x80FD;&#x3001;&#x907F;&#x514D;&#x5B57;&#x6BB5;&#x540D;&#x51B2;&#x7A81;&#xFF0C;&#x5728;&#x591A;&#x8868;&#x8FDE;&#x63A5;&#x67E5;&#x8BE2;&#x7684;SELECT&#x5B50;&#x53E5;&#x4E2D;&#xFF0C;&#x5E94;&#x8BE5;&#x4EE5;&#x201C;&#x8868;&#x540D;.&#x5B57;&#x6BB5;&#x540D;&#x201D;&#x7684;&#x65B9;&#x5F0F;&#x547D;&#x540D;&#x3002;&#x4E0D;&#x8FC7;&#x6309;&#x7167;&#x6B64;&#x89C4;&#x5219;&#x7F16;&#x5199;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x5728;&#x6240;&#x9009;&#x5B57;&#x6BB5;&#x6BD4;&#x8F83;&#x591A;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;SELECT&#x5B50;&#x53E5;&#x5F80;&#x5F80;&#x5197;&#x957F;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8868;&#x522B;&#x540D;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;</p>
@@ -891,8 +891,8 @@ FROM employees e, jobs j,departments d
 
 WHERE e.job_id = j.job_id AND e.department_id = d.department_id
 </code></pre><p>&#x2003;&#x2003;&#x5728;SQL&#x8BED;&#x53E5;&#x7684;WHERE&#x5B50;&#x53E5;&#x91CC;&#xFF0C;&#x7528;AND&#x5C06;&#x4E24;&#x4E2A;&#x8FDE;&#x63A5;&#x6761;&#x4EF6;&#x7ED3;&#x5408;&#x8D77;&#x6765;&#x3002;&#x6267;&#x884C;&#x8BE5;SQL&#x8BED;&#x53E5;&#xFF0C;&#x90E8;&#x5206;&#x663E;&#x793A;&#x7ED3;&#x679C;&#x5982;&#x56FE;3.14&#x6240;&#x793A;&#x3002;</p>
-<p align="center"><img src="../../img/d3z/tu3.14.png"></p>  
-<p align="center">&#x56FE;3.14  &#x591A;&#x8868;&#x7B49;&#x503C;&#x8FDE;&#x63A5;</p>  
+<center><img src="https://labfile.oss.aliyuncs.com/library/oracle_textbook/img/d3z/tu3.14.png"></center>  
+<center>&#x56FE;3.14  &#x591A;&#x8868;&#x7B49;&#x503C;&#x8FDE;&#x63A5;</center>  
 
 <p>&#x2003;&#x2003;&#x5206;&#x6790;&#x8BE5;&#x591A;&#x8868;&#x8FDE;&#x63A5;&#xFF0C;&#x5176;&#x6838;&#x5FC3;&#x8868;&#x662F;employees&#x8868;&#xFF0C;&#x5206;&#x522B;&#x901A;&#x8FC7;job_id&#x548C;jobs&#x8868;&#x5173;&#x8054;&#x8FDE;&#x63A5;&#xFF08;&#x5176;&#x4E2D;jobs&#x8868;&#x4E2D;&#x7684;job_id&#x5B57;&#x6BB5;&#x662F;&#x4E3B;&#x952E;&#xFF0C;employees&#x8868;&#x4E2D;&#x7684;job_id&#x5B57;&#x6BB5;&#x662F;&#x5916;&#x952E;&#xFF09;&#xFF0C;&#x901A;&#x8FC7;department_id&#x548C;departments&#x8868;&#x5173;&#x8054;&#x8FDE;&#x63A5;&#xFF08;&#x5176;&#x4E2D;departments&#x8868;&#x4E2D;&#x7684;department_id&#x5B57;&#x6BB5;&#x662F;&#x4E3B;&#x952E;&#xFF0C;employees&#x8868;&#x4E2D;&#x7684;department_id&#x5B57;&#x6BB5;&#x662F;&#x5916;&#x952E;&#xFF09;&#x3002;</p>
 <p>&#x2003;&#x2003;&#x5982;&#x679C;&#x8FD8;&#x9700;&#x8981;&#x5728;&#x5BF9;employees&#x8868;&#x8FDB;&#x884C;&#x67E5;&#x8BE2;&#x65F6;&#x663E;&#x793A;&#x96C7;&#x5458;&#x6240;&#x5728;&#x7684;&#x57CE;&#x5E02;&#xFF0C;&#x8BE5;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x5462;&#xFF1F;&#x901A;&#x8FC7;&#x5206;&#x6790;&#xFF0C;employees&#x8868;&#x4E2D;&#x6CA1;&#x6709;&#x548C;&#x57CE;&#x5E02;&#x76F8;&#x5173;&#x8054;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x4F46;&#x548C;employees&#x8868;&#x5173;&#x8054;&#x7684;departments&#x8868;&#x4E2D;&#x6709;&#x6240;&#x5728;&#x5730;&#x7F16;&#x53F7;&#xFF08;location_id&#xFF09;&#xFF0C;&#x800C;&#x901A;&#x8FC7;location_id&#x53EF;&#x5173;&#x8054;&#x5230;locations&#x8868;&#xFF0C;&#x8BE5;&#x8868;&#x4E2D;&#x6709;&#x57CE;&#x5E02;&#x7684;&#x4FE1;&#x606F;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x5728;departments&#x8868;&#x4E0A;&#x8FDB;&#x884C;&#x591A;&#x8868;&#x7B49;&#x503C;&#x8FDE;&#x63A5;&#xFF0C;&#x5176;SQL&#x8BED;&#x53E5;&#x5982;&#x4E0B;&#xFF1A;</p>
@@ -902,8 +902,8 @@ FROM employees e, jobs j,departments d,locations l
 
 WHERE e.job_id = j.job_id AND e.department_id = d.department_id AND d.location_id = l.location_id
 </code></pre><p>&#x2003;&#x2003;&#x4E3A;&#x4E86;&#x66F4;&#x597D;&#x5730;&#x4ECB;&#x7ECD;&#x591A;&#x8868;&#x8FDE;&#x63A5;&#xFF0C;&#x56FE;3.15&#x663E;&#x793A;&#x4E86;&#x56DB;&#x4E2A;&#x8868;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x3002;</p>
-<p align="center"><img src="../../img/d3z/tu3.15.png"></p>  
-<p align="center">&#x56FE;3.15  &#x591A;&#x8868;&#x8FDE;&#x63A5;&#x793A;&#x610F;&#x56FE;</p>  
+<center><img src="https://labfile.oss.aliyuncs.com/library/oracle_textbook/img/d3z/tu3.15.png"></center>  
+<center>&#x56FE;3.15  &#x591A;&#x8868;&#x8FDE;&#x63A5;&#x793A;&#x610F;&#x56FE;</center>  
 
 <h3 id="354--&#x81EA;&#x7136;&#x8FDE;&#x63A5;&#x3001;using&#x5B50;&#x53E5;&#x548C;on&#x5B50;&#x53E5;">3.5.4  &#x81EA;&#x7136;&#x8FDE;&#x63A5;&#x3001;USING&#x5B50;&#x53E5;&#x548C;ON&#x5B50;&#x53E5;</h3>
 <p>&#x2003;&#x2003;&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x8868;&#x4E2D;&#xFF0C;&#x6709;&#x76F8;&#x540C;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#x4E14;&#x5B57;&#x6BB5;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x76F8;&#x540C;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Oracle&#x7684;&#x81EA;&#x7136;&#x8FDE;&#x63A5;&#x5B9E;&#x73B0;&#x4E24;&#x8868;&#x4E4B;&#x95F4;&#x7684;&#x7B49;&#x503C;&#x8FDE;&#x63A5;&#xFF0C;&#x81EA;&#x7136;&#x8FDE;&#x63A5;&#x662F;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x7684;&#x7B49;&#x503C;&#x8FDE;&#x63A5;&#x3002;</p>
@@ -947,11 +947,11 @@ FROM employees e,departments d
 
 WHERE e.department_id = d.department_id
 </code></pre><p>&#x2003;&#x2003;&#x6267;&#x884C;&#x7B49;&#x503C;&#x8FDE;&#x63A5;SQL&#x8BED;&#x53E5;&#xFF0C;&#x5374;&#x8FD4;&#x56DE;&#x4E86;106&#x6761;&#x8BB0;&#x5F55;&#xFF0C;&#x5982;&#x56FE;3.17&#x6240;&#x793A;&#x3002;&#x8FD9;&#x8BF4;&#x660E;&#x8FD9;&#x4E24;&#x6BB5;SQL&#x8BED;&#x53E5;&#x4E0D;&#x7B49;&#x4EF7;&#xFF0C;&#x4F46;&#x95EE;&#x9898;&#x51FA;&#x5728;&#x54EA;&#x91CC;&#x5462;&#xFF1F;</p>
-<p align="center"><img src="../../img/d3z/tu3.16.png"></p>  
-<p align="center">&#x56FE;3.16  &#x81EA;&#x7136;&#x8FDE;&#x63A5;</p>  
+<center><img src="https://labfile.oss.aliyuncs.com/library/oracle_textbook/img/d3z/tu3.16.png"></center>  
+<center>&#x56FE;3.16  &#x81EA;&#x7136;&#x8FDE;&#x63A5;</center>  
 
-<p align="center"><img src="../../img/d3z/tu3.17.png"></p>  
-<p align="center">&#x56FE;3.17  &#x7B49;&#x503C;&#x8FDE;&#x63A5;</p>  
+<center><img src="https://labfile.oss.aliyuncs.com/library/oracle_textbook/img/d3z/tu3.17.png"></center>  
+<center>&#x56FE;3.17  &#x7B49;&#x503C;&#x8FDE;&#x63A5;</center>  
 
 
 
@@ -1027,7 +1027,7 @@ WHERE e.manager_id=b.employee_id
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3.5  多表查询","level":"4.1.5","depth":2,"next":{"title":"3.6  外连接","level":"4.1.6","depth":2,"path":"chapters/d3z/3.6外连接.md","ref":"chapters/d3z/3.6外连接.md","articles":[]},"previous":{"title":"3.4  通用函数","level":"4.1.4","depth":2,"path":"chapters/d3z/3.4通用函数.md","ref":"chapters/d3z/3.4通用函数.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/d3z/3.5多表查询.md","mtime":"2020-04-22T08:55:56.094Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-22T09:12:58.227Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.5  多表查询","level":"4.1.5","depth":2,"next":{"title":"3.6  外连接","level":"4.1.6","depth":2,"path":"chapters/d3z/3.6外连接.md","ref":"chapters/d3z/3.6外连接.md","articles":[]},"previous":{"title":"3.4  通用函数","level":"4.1.4","depth":2,"path":"chapters/d3z/3.4通用函数.md","ref":"chapters/d3z/3.4通用函数.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/d3z/3.5多表查询.md","mtime":"2020-04-22T12:44:37.258Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-22T12:45:19.102Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

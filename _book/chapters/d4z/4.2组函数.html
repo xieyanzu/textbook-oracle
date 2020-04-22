@@ -912,19 +912,19 @@ WHERE salary &lt; (SELECT MAX(salary) FROM employees WHERE department_id = 60)
 </tbody>
 </table>
 <p>&#x2003;&#x2003;&#x56E0;&#x4E3A;&#x96C7;&#x5458;&#x8868;&#x4E2D;&#x7684;&#x8BB0;&#x5F55;&#x6BD4;&#x8F83;&#x591A;&#xFF0C;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x6F14;&#x793A;&#xFF0C;&#x6240;&#x4EE5;&#x4EC5;&#x9009;&#x4E86;&#x90E8;&#x95E8;&#x7F16;&#x53F7;&#x4E3A;60&#x7684;&#x96C7;&#x5458;&#x4FE1;&#x606F;&#x53C2;&#x4E0E;&#x8BA1;&#x7B97;&#xFF0C;&#x5148;&#x770B;&#x4E00;&#x4E0B;&#x56FE;4.8&#x663E;&#x793A;&#x7684;&#x8BE5;&#x90E8;&#x95E8;&#x96C7;&#x5458;&#x4FE1;&#x606F;&#x3002;</p>
-<p align="center"><img src="../../img/d4z/tu4.8.png"></p>  
-<p align="center">&#x56FE;4.8  IT&#x90E8;&#x95E8;&#x96C7;&#x5458;&#x4FE1;&#x606F;</p>  
+<center><img src="https://labfile.oss.aliyuncs.com/library/oracle_textbook/img/d4z/tu4.8.png"></center>  
+<center>&#x56FE;4.8  IT&#x90E8;&#x95E8;&#x96C7;&#x5458;&#x4FE1;&#x606F;</center>  
 
 <p>&#x2003;&#x2003;&#x5BF9;&#x8BE5;&#x6570;&#x636E;&#x96C6;&#x4F7F;&#x7528;MAX&#x3001;MIN&#x3001;AVG&#x548C;SUM&#x8FD9;&#x56DB;&#x4E2A;&#x7EC4;&#x51FD;&#x6570;&#xFF0C;SQL&#x8BED;&#x53E5;&#x5982;&#x4E0B;&#xFF0C;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;4.9&#x6240;&#x793A;&#x3002;</p>
 <pre><code>SELECT MAX(salary) AS &quot;&#x6700;&#x9AD8;&#x85AA;&quot;, MIN(salary) AS &quot;&#x6700;&#x4F4E;&#x85AA;&quot;, AVG(salary) AS &quot;&#x5E73;&#x5747;&#x85AA;&#x6C34;&quot;, SUM(salary) AS &quot;&#x85AA;&#x6C34;&#x603B;&#x548C;&quot; 
 
 FROM employees WHERE department_id = 60
-</code></pre><p align="center"><img src="../../img/d4z/tu4.9.png"></p>  
-<p align="center">&#x56FE;4.9  &#x7EC4;&#x51FD;&#x6570;&#x4F7F;&#x7528;</p>  
+</code></pre><center><img src="https://labfile.oss.aliyuncs.com/library/oracle_textbook/img/d4z/tu4.9.png"></center>  
+<center>&#x56FE;4.9  &#x7EC4;&#x51FD;&#x6570;&#x4F7F;&#x7528;</center>  
 
 <p>&#x2003;&#x2003;&#x4FEE;&#x6539;&#x8BE5;SQL&#x8BED;&#x53E5;&#xFF0C;&#x5C06;AVG(salary)&#x548C;SUM(salary)&#x8FD9;&#x4E24;&#x4E2A;&#x7EC4;&#x51FD;&#x6570;&#x4FEE;&#x6539;&#x4E3A;AVG(DISTINCT salary)&#x548C;SUM(DISTINCT salary)&#xFF0C;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;4.10&#x6240;&#x793A;&#x3002;</p>
-<p align="center"><img src="../../img/d4z/tu4.10.png"></p>  
-<p align="center">&#x56FE;4.10  &#x7EC4;&#x51FD;&#x6570;&#x4F7F;&#x7528;</p>  
+<center><img src="https://labfile.oss.aliyuncs.com/library/oracle_textbook/img/d4z/tu4.10.png"></center>  
+<center>&#x56FE;4.10  &#x7EC4;&#x51FD;&#x6570;&#x4F7F;&#x7528;</center>  
 
 <p>&#x2003;&#x2003;&#x4F7F;&#x7528;DISTINCT&#x5173;&#x952E;&#x5B57;&#x7684;&#x76EE;&#x7684;&#x662F;&#x53BB;&#x9664;&#x91CD;&#x590D;&#xFF0C;SUM(DISTINCT salary)&#x51FD;&#x6570;&#x4EC5;&#x5BF9;&#x4E0D;&#x91CD;&#x590D;&#x7684;&#x884C;&#x8FDB;&#x884C;&#x6C42;&#x548C;&#x3002;&#x56FE;4.8&#x4E2D;&#xFF0C;&#x7F16;&#x53F7;&#x4E3A;105&#x548C;106&#x7684;&#x5458;&#x5DE5;&#x85AA;&#x6C34;&#x91CD;&#x590D;&#xFF0C;&#x6240;&#x4EE5;&#x4EC5;&#x53D6;&#x4E00;&#x884C;&#x6570;&#x636E;&#x53C2;&#x4E0E;&#x6C42;&#x548C;&#xFF0C;&#x6545;AVG(DISTINCT salary)&#x5B9E;&#x9645;&#x662F;&#x5BF9;9000&#x3001;6000&#x3001;4800&#x548C;4200&#x6C42;&#x548C;&#xFF0C;&#x5F97;&#x5230;&#x7684;&#x7ED3;&#x679C;&#x662F;24000&#x3002;&#x540C;&#x7406;&#xFF0C;AVG(DISTINCT salary)&#x51FD;&#x6570;&#x4E5F;&#x4EC5;&#x5BF9;&#x8FD9;&#x56DB;&#x4E2A;&#x6570;&#x6C42;&#x5E73;&#x5747;&#x503C;&#xFF0C;&#x7ED3;&#x679C;&#x4E3A;6000&#x3002;</p>
 <p>&#x2003;&#x2003;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;MAX&#x548C;MIN&#x51FD;&#x6570;&#x4E0D;&#x4EC5;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5728;&#x6570;&#x5B57;&#x7C7B;&#x578B;&#x4E0A;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x4EFB;&#x610F;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;&#x800C;AVG&#x3001;SUM&#x4EE5;&#x53CA;STDDEV&#x548C;VARIANCE&#x4EC5;&#x80FD;&#x7528;&#x5728;&#x6570;&#x5B57;&#x7C7B;&#x578B;&#x4E0A;&#x3002;</p>
@@ -934,8 +934,8 @@ FROM employees WHERE department_id = 60
 
 FROM employees
 </code></pre><p>&#x2003;&#x2003;&#x6267;&#x884C;&#x8BE5;SQL&#x8BED;&#x53E5;&#xFF0C;&#x7ED3;&#x679C;&#x5982;&#x56FE;4.11&#x6240;&#x793A;&#x3002;</p>
-<p align="center"><img src="../../img/d4z/tu4.11.png"></p>  
-<p align="center">&#x56FE;4.11  COUNT&#x7EC4;&#x51FD;&#x6570;&#x4F7F;&#x7528;</p>  
+<center><img src="https://labfile.oss.aliyuncs.com/library/oracle_textbook/img/d4z/tu4.11.png"></center>  
+<center>&#x56FE;4.11  COUNT&#x7EC4;&#x51FD;&#x6570;&#x4F7F;&#x7528;</center>  
 
 <p>&#x2003;&#x2003;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x7EDF;&#x8BA1;&#x96C7;&#x5458;&#x603B;&#x4EBA;&#x6570;&#x65F6;&#xFF0C;&#x662F;&#x5BF9;&#x201C;*&#x201D;&#x8FDB;&#x884C;COUNT&#x3002;&#x5982;&#x679C;COUNT&#x51FD;&#x6570;&#x91CC;&#x7684;&#x53C2;&#x6570;&#x662F;&#x5B57;&#x6BB5;manager_id&#xFF0C;&#x6267;&#x884C;SQL&#x8BED;&#x53E5;&#x540E;&#xFF0C;&#x7EDF;&#x8BA1;&#x51FA;&#x7684;&#x4EBA;&#x6570;&#x662F;106&#x540D;&#xFF0C;&#x5E76;&#x4E0D;&#x662F;&#x6B63;&#x786E;&#x7684;&#x6570;&#x503C;&#x3002;&#x5176;&#x539F;&#x56E0;&#x5728;&#x4E8E;&#xFF0C;&#x96C7;&#x5458;&#x8868;&#x4E2D;&#x8001;&#x677F;&#x8FD9;&#x6761;&#x8BB0;&#x5F55;&#x7684;manager_id&#x5B57;&#x6BB5;&#x4E3A;&#x7A7A;&#xFF0C;COUNT(manager_id)&#x662F;&#x5FFD;&#x7565;&#x7A7A;&#x503C;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x6CA1;&#x6709;&#x7EDF;&#x8BA1;&#x8001;&#x677F;&#x3002;</p>
 <p>&#x2003;&#x2003;&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;NVL&#x51FD;&#x6570;&#x5C06;&#x7A7A;&#x503C;&#x7F6E;&#x4E3A;&#x67D0;&#x503C;&#xFF0C;&#x4F7F;&#x7EC4;&#x51FD;&#x6570;&#x5728;&#x8FDB;&#x884C;&#x7EDF;&#x8BA1;&#x3001;&#x8BA1;&#x7B97;&#x65F6;&#xFF0C;&#x4E0D;&#x5FFD;&#x7565;&#x8BE5;&#x884C;&#xFF0C;&#x5177;&#x4F53;SQL&#x8BED;&#x53E5;&#x5982;&#x4E0B;&#xFF1A;</p>
@@ -950,16 +950,16 @@ FROM employees
 
 FROM employees GROUP BY department_id
 </code></pre><p>&#x2003;&#x2003;&#x6267;&#x884C;&#x8BE5;SQL&#x8BED;&#x53E5;&#xFF0C;&#x663E;&#x793A;&#x7ED3;&#x679C;&#x5982;&#x56FE;4.12&#x6240;&#x793A;&#x3002;</p>
-<p align="center"><img src="../../img/d4z/tu4.12.png"></p>  
-<p align="center">&#x56FE;4.12  GROUP BY&#x4F7F;&#x7528;</p>  
+<center><img src="https://labfile.oss.aliyuncs.com/library/oracle_textbook/img/d4z/tu4.12.png"></center>  
+<center>&#x56FE;4.12  GROUP BY&#x4F7F;&#x7528;</center>  
 
 <p>&#x2003;&#x2003;&#x6CE8;&#x610F;&#xFF0C;&#x5728;SELECT&#x5B50;&#x53E5;&#x4E2D;&#xFF0C;&#x53EA;&#x53EF;&#x4EE5;&#x6709;&#x7EC4;&#x51FD;&#x6570;&#x548C;&#x5206;&#x7EC4;&#x5B57;&#x6BB5;&#xFF08;&#x5305;&#x62EC;&#x5BF9;&#x5206;&#x7EC4;&#x5B57;&#x6BB5;&#x7684;&#x64CD;&#x4F5C;&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x5305;&#x62EC;&#x5176;&#x4ED6;&#x5B57;&#x6BB5;&#x4F1A;&#x62A5;&#x9519;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x5982;&#x679C;GROUP BY&#x5B50;&#x53E5;&#x540E;&#x8981;&#x5305;&#x62EC;ORDER BY&#x5B50;&#x53E5;&#xFF0C;&#x5219;ORDER BY&#x5B50;&#x53E5;&#x7528;&#x4E8E;&#x6392;&#x5E8F;&#x7684;&#x5B57;&#x6BB5;&#x5FC5;&#x987B;&#x662F;&#x5206;&#x7EC4;&#x5B57;&#x6BB5;&#x6216;&#x7EC4;&#x51FD;&#x6570;&#x3002;&#x4F8B;&#x5982;&#x8981;&#x5C06;&#x521A;&#x624D;&#x83B7;&#x53D6;&#x7684;&#x7ED3;&#x679C;&#x6309;&#x7167;&#x5404;&#x90E8;&#x95E8;&#x6700;&#x9AD8;&#x85AA;&#x6C34;&#x503C;&#x8FDB;&#x884C;&#x4ECE;&#x9AD8;&#x5230;&#x5E95;&#x7684;&#x6392;&#x5E8F;&#xFF0C;&#x5176;SQL&#x8BED;&#x53E5;&#x5982;&#x4E0B;&#xFF1A;</p>
 <pre><code>SELECT department_id, MAX(salary) FROM employees 
 
 GROUP BY department_id ORDER BY MAX(salary) DESC
 </code></pre><p>&#x2003;&#x2003;&#x6267;&#x884C;SQL&#x8BED;&#x53E5;&#xFF0C;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;4.13&#x6240;&#x793A;&#x3002;</p>
-<p align="center"><img src="../../img/d4z/tu4.13.png"></p>  
-<p align="center">&#x56FE;4.13  &#x5BF9;&#x5206;&#x7EC4;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x6392;&#x5E8F;</p>  
+<center><img src="https://labfile.oss.aliyuncs.com/library/oracle_textbook/img/d4z/tu4.13.png"></center>  
+<center>&#x56FE;4.13  &#x5BF9;&#x5206;&#x7EC4;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x6392;&#x5E8F;</center>  
 
 <p>&#x2003;&#x2003;&#x8BFB;&#x8005;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x4E00;&#x4E0B;&#xFF0C;&#x4FEE;&#x6539;&#x4E0A;&#x9762;&#x7684;SQL&#x8BED;&#x53E5;&#xFF0C;&#x5206;&#x522B;&#x5728;SELECT&#x5B50;&#x53E5;&#x548C;ORDER BY&#x5B50;&#x53E5;&#x4E2D;&#x589E;&#x52A0;salary&#x6216;&#x5176;&#x4ED6;&#x5B57;&#x6BB5;&#xFF0C;&#x6267;&#x884C;SQL&#x8BED;&#x53E5;&#xFF0C;&#x770B;&#x770B;&#x4F1A;&#x51FA;&#x73B0;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
 <h3 id="424--&#x5206;&#x7EC4;&#x4E2D;&#x518D;&#x5206;&#x7EC4;">4.2.4  &#x5206;&#x7EC4;&#x4E2D;&#x518D;&#x5206;&#x7EC4;</h3>
@@ -971,8 +971,8 @@ FROM employees GROUP BY department_id, job_id
 
 ORDER BY department_id, job_id
 </code></pre><p>&#x2003;&#x2003;&#x6267;&#x884C;&#x8BE5;SQL&#x8BED;&#x53E5;&#xFF0C;&#x90E8;&#x5206;&#x663E;&#x793A;&#x7ED3;&#x679C;&#x5982;&#x56FE;4.14&#x6240;&#x793A;&#x3002;</p>
-<p align="center"><img src="../../img/d4z/tu4.14.png"></p>  
-<p align="center">&#x56FE;4.14  &#x5206;&#x7EC4;&#x4E2D;&#x518D;&#x5206;&#x7EC4;</p>  
+<center><img src="https://labfile.oss.aliyuncs.com/library/oracle_textbook/img/d4z/tu4.14.png"></center>  
+<center>&#x56FE;4.14  &#x5206;&#x7EC4;&#x4E2D;&#x518D;&#x5206;&#x7EC4;</center>  
 &#x2003;&#x2003;&#x540C;&#x6837;&#x7684;&#xFF0C;SELECT&#x5B50;&#x53E5;&#x548C;ORDER BY&#x5B50;&#x53E5;&#x4E2D;&#x53EA;&#x80FD;&#x5305;&#x62EC;&#x5206;&#x7EC4;&#x5B57;&#x6BB5;&#x548C;&#x7EC4;&#x51FD;&#x6570;&#x3002;
 
 ### 4.2.5  &#x7EA6;&#x675F;&#x5206;&#x7EC4;&#x7ED3;&#x679C;  
@@ -989,8 +989,8 @@ WHERE department_id IN(50,60,80,90) GROUP BY department_id
 
 
 
-<p align="center"><img src="../../img/d4z/tu4.15.png"></p>  
-<p align="center">&#x56FE;4.15  &#x5206;&#x7EC4;&#x524D;&#x4F7F;&#x7528;WHERE&#x5B50;&#x53E5;&#x7EA6;&#x675F;&#x884C;</p>  
+<center><img src="https://labfile.oss.aliyuncs.com/library/oracle_textbook/img/d4z/tu4.15.png"></center>  
+<center>&#x56FE;4.15  &#x5206;&#x7EC4;&#x524D;&#x4F7F;&#x7528;WHERE&#x5B50;&#x53E5;&#x7EA6;&#x675F;&#x884C;</center>  
 
 <p>&#x2003;&#x2003;&#x8FD9;&#x91CC;&#x9700;&#x8981;&#x5F3A;&#x8C03;&#x7684;&#x662F;&#xFF0C;WHERE&#x5B50;&#x53E5;&#x5FC5;&#x987B;&#x5728;GROUP BY&#x5B50;&#x53E5;&#x524D;&#xFF0C;&#x800C;&#x4E14;&#x4ECE;&#x542B;&#x4E49;&#x4E0A;&#x6765;&#x8BF4;&#xFF0C;&#x4E5F;&#x662F;&#x5148;&#x8FDB;&#x884C;&#x7EA6;&#x675F;&#x4E4B;&#x540E;&#x518D;&#x8FDB;&#x884C;&#x5206;&#x7EC4;&#x3002;&#x6240;&#x4EE5;&#xFF0C;WHERE&#x5B50;&#x53E5;&#x4E2D;&#x9009;&#x62E9;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x5E76;&#x975E;&#x5FC5;&#x987B;&#x4E3A;&#x5206;&#x7EC4;&#x5B57;&#x6BB5;&#xFF0C;&#x4F46;&#x4E5F;&#x80AF;&#x5B9A;&#x4E0D;&#x80FD;&#x662F;&#x7EC4;&#x51FD;&#x6570;&#x3002;</p>
 <p>&#x2003;&#x2003;&#x90A3;&#x5982;&#x679C;&#x8981;&#x5BF9;&#x5206;&#x7EC4;&#x540E;&#x7684;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x7EA6;&#x675F;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;&#x53EA;&#x663E;&#x793A;&#x6700;&#x9AD8;&#x85AA;&#x6C34;&#x5927;&#x4E8E;12000&#x5143;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x8BE5;&#x5982;&#x4F55;&#x64CD;&#x4F5C;&#x5462;&#xFF1F;&#x8FD9;&#x65F6;&#x5019;&#x5C31;&#x9700;&#x8981;&#x4F7F;&#x7528;HAVING&#x5B50;&#x53E5;&#x5BF9;&#x5206;&#x7EC4;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x7EA6;&#x675F;&#x3002;HAVING&#x5B50;&#x53E5;&#x5FC5;&#x987B;&#x5728;GROUP BY&#x5B50;&#x53E5;&#x4E4B;&#x540E;&#xFF0C;&#x5728;ORDER BY&#x5B50;&#x53E5;&#x4E4B;&#x524D;&#x3002;&#x5B8C;&#x6210;&#x4E0A;&#x9762;&#x9700;&#x6C42;&#x7684;SQL&#x8BED;&#x53E5;&#x5982;&#x4E0B;&#xFF1A;</p>
@@ -1000,8 +1000,8 @@ WHERE department_id IN(50,60,80,90)
 
 GROUP BY department_id HAVING MAX(salary) &gt; 12000
 </code></pre><p>&#x2003;&#x2003;&#x6267;&#x884C;&#x8BE5;SQL&#x8BED;&#x53E5;&#xFF0C;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;4.16&#x6240;&#x793A;&#x3002;</p>
-<p align="center"><img src="../../img/d4z/tu4.16.png"></p>  
-<p align="center">&#x56FE;4.16  HAVING&#x5B50;&#x53E5;&#x4F7F;&#x7528;</p>  
+<center><img src="https://labfile.oss.aliyuncs.com/library/oracle_textbook/img/d4z/tu4.16.png"></center>  
+<center>&#x56FE;4.16  HAVING&#x5B50;&#x53E5;&#x4F7F;&#x7528;</center>  
 
 <p>&#x2003;&#x2003;&#x8BF7;&#x8BFB;&#x8005;&#x601D;&#x8003;&#x4E00;&#x4E0B;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;HAVING&#x5B50;&#x53E5;&#x4E2D;&#x4F7F;&#x7528;&#x975E;&#x5206;&#x7EC4;&#x5B57;&#x6BB5;&#x3001;&#x7EC4;&#x51FD;&#x6570;&#x5417;&#xFF1F;</p>
 
@@ -1047,7 +1047,7 @@ GROUP BY department_id HAVING MAX(salary) &gt; 12000
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4.2  组函数","level":"5.1.2","depth":2,"next":{"title":"4.3  本章练习","level":"5.1.3","depth":2,"path":"chapters/d4z/4.3本章练习.md","ref":"chapters/d4z/4.3本章练习.md","articles":[]},"previous":{"title":"4.1  子查询","level":"5.1.1","depth":2,"path":"chapters/d4z/4.1子查询.md","ref":"chapters/d4z/4.1子查询.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/d4z/4.2组函数.md","mtime":"2020-04-22T08:55:56.109Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-22T09:12:58.227Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4.2  组函数","level":"5.1.2","depth":2,"next":{"title":"4.3  本章练习","level":"5.1.3","depth":2,"path":"chapters/d4z/4.3本章练习.md","ref":"chapters/d4z/4.3本章练习.md","articles":[]},"previous":{"title":"4.1  子查询","level":"5.1.1","depth":2,"path":"chapters/d4z/4.1子查询.md","ref":"chapters/d4z/4.1子查询.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/d4z/4.2组函数.md","mtime":"2020-04-22T12:44:37.304Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-22T12:45:19.102Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

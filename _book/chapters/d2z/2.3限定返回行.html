@@ -865,12 +865,12 @@
 <p>&#x2003;&#x2003;&#x56DE;&#x5230;employees&#x8868;&#xFF0C;&#x5982;&#x679C;&#x5E0C;&#x671B;&#x67E5;&#x8BE2;&#x51FA;&#x85AA;&#x6C34;&#x5927;&#x4E8E;&#x7B49;&#x4E8E;12000&#x5143;&#x7684;&#x96C7;&#x5458;&#x7684;&#x540D;&#x5B57;&#x548C;&#x85AA;&#x6C34;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x7528;&#x4E0B;&#x9762;&#x7684;SQL&#x8BED;&#x53E5;&#xFF1A;</p>
 <pre><code>SELECT first_name, salary FROM employees WHERE salary &gt;= 12000
 </code></pre><p>&#x6267;&#x884C;SQL&#x8BED;&#x53E5;&#xFF0C;&#x7ED3;&#x679C;&#x5982;&#x56FE;2.23&#x6240;&#x793A;&#x3002;</p>
-<p align="center"><img src="../../img/d2z/tu2.22.png"></p>  
-<p align="center">&#x56FE;2.22  SQL WHERE&#x5B50;&#x53E5; </p>  
+<center><img src="https://labfile.oss.aliyuncs.com/library/oracle_textbook/img/d2z/tu2.22.png"></center>  
+<center>&#x56FE;2.22  SQL WHERE&#x5B50;&#x53E5; </center>  
 
 
-<p align="center"><img src="../../img/d2z/tu2.23.png"></p>  
-<p align="center">&#x56FE;2.23  WHERE&#x5B50;&#x53E5;&#x6BD4;&#x8F83;&#x6761;&#x4EF6;</p>  
+<center><img src="https://labfile.oss.aliyuncs.com/library/oracle_textbook/img/d2z/tu2.23.png"></center>  
+<center>&#x56FE;2.23  WHERE&#x5B50;&#x53E5;&#x6BD4;&#x8F83;&#x6761;&#x4EF6;</center>  
 
 <p>&#x200B;                                      </p>
 <h3 id="232--&#x9650;&#x5B9A;&#x884C;&#x8FDB;&#x9636;">2.3.2  &#x9650;&#x5B9A;&#x884C;&#x8FDB;&#x9636;</h3>
@@ -898,8 +898,8 @@
 <p>&#x2003;&#x2003;&#x201C;%&#x201D;&#x548C;&#x201C;<em>&#x201D;&#x901A;&#x914D;&#x7B26;&#x53EF;&#x4EE5;&#x88AB;&#x7EC4;&#x5408;&#x4F7F;&#x7528;&#xFF0C;&#x4F8B;&#x5982;LIKE &apos;%s</em>&apos; &#x8868;&#x793A;&#x5339;&#x914D;&#x5012;&#x6570;&#x7B2C;&#x4E8C;&#x4E2A;&#x4F4D;&#x7F6E;&#x5B57;&#x7B26;&#x4E3A;s&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x5F53;&#x786E;&#x5B9E;&#x9700;&#x8981;&#x5339;&#x914D;&#x201C;%&#x201D;&#x548C;&#x201C;<em>&#x201D;&#x8FD9;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;ESCAPE&#x9009;&#x9879;&#xFF0C;&#x8BE5;&#x9009;&#x9879;&#x6307;&#x5B9A;&#x6362;&#x7801;&#x7B26;&#x662F;&#x4EC0;&#x4E48;&#x3002;&#x5982;&#x679C;&#x60F3;&#x8981;&#x641C;&#x7D22;employees&#x8868;&#x91CC;job_id&#x5305;&#x542B;&#x201C;AD</em>&#x201D;&#x7684;&#x96C7;&#x5458;&#x804C;&#x4F4D;&#x7F16;&#x53F7;&#x3001;&#x540D;&#x5B57;&#x548C;&#x85AA;&#x6C34;&#x4FE1;&#x606F;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E0B;&#x9762;&#x7684;SQL&#x8BED;&#x53E5;&#xFF1A;</p>
 <pre><code>SELECT job_id, first_name, salary FROM employees WHERE job_id LIKE &apos;%AD$_%&apos; ESCAPE &apos;$&apos;
 </code></pre><p>&#x2003;&#x2003;&#x5176;&#x4E2D;ESCAPE&#x9009;&#x9879;&#x6307;&#x5B9A;&#x7F8E;&#x5143;&#x7B26;&#x201C;$&#x201D;&#x4E3A;&#x6362;&#x7801;&#x7B26;&#xFF0C;&#x5373;&#x4E0D;&#x5C06;&#x7F8E;&#x5143;&#x7B26;&#x540E;&#x9762;&#x7684;&#x201C;_&#x201D;&#x5F53;&#x4F5C;&#x901A;&#x914D;&#x7B26;&#x770B;&#x5F85;&#x3002;&#x6267;&#x884C;SQL&#x8BED;&#x53E5;&#xFF0C;&#x7ED3;&#x679C;&#x5982;&#x56FE;2.24&#x6240;&#x793A;&#x3002;</p>
-<p align="center"><img src="../../img/d2z/tu2.24.png"></p>  
-<p align="center">&#x56FE;2.24 &#x201C;%&#x201D;&#x548C;&#x201C;_&#x201D;&#x901A;&#x914D;&#x7B26;&#x7EC4;&#x5408;&#x4F7F;&#x7528;</p>  
+<center><img src="https://labfile.oss.aliyuncs.com/library/oracle_textbook/img/d2z/tu2.24.png"></center>  
+<center>&#x56FE;2.24 &#x201C;%&#x201D;&#x548C;&#x201C;_&#x201D;&#x901A;&#x914D;&#x7B26;&#x7EC4;&#x5408;&#x4F7F;&#x7528;</center>  
 
 
 
@@ -910,8 +910,8 @@
 <p>&#x2003;&#x2003;&#x5982;&#x679C;&#x8981;&#x67E5;&#x8BE2;&#x6CA1;&#x6709;&#x4F63;&#x91D1;&#x7684;&#x96C7;&#x5458;&#x7684;&#x804C;&#x4F4D;&#x7F16;&#x53F7;&#x3001;&#x540D;&#x5B57;&#x548C;&#x4F63;&#x91D1;&#x767E;&#x5206;&#x6BD4;&#xFF0C;&#x7528;&#x4E0B;&#x9762;&#x7684;SQL&#x8BED;&#x53E5;&#xFF1A;</p>
 <pre><code>SELECT job_id,first_name,commission_pct FROM employees WHERE commission_pct IS NULL
 </code></pre><p>&#x2003;&#x2003;&#x90E8;&#x5206;&#x663E;&#x793A;&#x7ED3;&#x679C;&#x5982;&#x56FE;2.25&#x6240;&#x793A;&#x3002;</p>
-<p align="center"><img src="../../img/d2z/tu2.25.png"></p>  
-<p align="center">&#x56FE;2.25  NULL&#x6761;&#x4EF6;&#x4F7F;&#x7528;</p>  
+<center><img src="https://labfile.oss.aliyuncs.com/library/oracle_textbook/img/d2z/tu2.25.png"></center>  
+<center>&#x56FE;2.25  NULL&#x6761;&#x4EF6;&#x4F7F;&#x7528;</center>  
 
 
 
@@ -985,7 +985,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2.3  限定返回行","level":"3.1.3","depth":2,"next":{"title":"2.4  排序","level":"3.1.4","depth":2,"path":"chapters/d2z/2.4排序.md","ref":"chapters/d2z/2.4排序.md","articles":[]},"previous":{"title":"2.2  数据查询","level":"3.1.2","depth":2,"path":"chapters/d2z/2.2数据查询.md","ref":"chapters/d2z/2.2数据查询.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/d2z/2.3限定返回行.md","mtime":"2020-04-22T08:55:56.062Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-22T09:12:58.227Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2.3  限定返回行","level":"3.1.3","depth":2,"next":{"title":"2.4  排序","level":"3.1.4","depth":2,"path":"chapters/d2z/2.4排序.md","ref":"chapters/d2z/2.4排序.md","articles":[]},"previous":{"title":"2.2  数据查询","level":"3.1.2","depth":2,"path":"chapters/d2z/2.2数据查询.md","ref":"chapters/d2z/2.2数据查询.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/d2z/2.3限定返回行.md","mtime":"2020-04-22T12:44:37.180Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-22T12:45:19.102Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
